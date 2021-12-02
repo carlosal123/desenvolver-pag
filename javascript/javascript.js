@@ -73,6 +73,33 @@ else
   alert("Menor:" +menor)
  
   }
+  function conferir(){
+    let turno = document.getElementById("turno").value;
+
+    if(turno=='m')
+    alert("matutino");
+    else if(turno=='v')
+    alert("vespertino");
+    else if(turno=='n')
+    alert("noturno");
+
+  }
+  function preço(){
+    var p1 = parseInt(document.getElementById('preco1').value);
+    var p2 = parseInt(document.getElementById('preco2').value);
+    var p3 = parseInt(document.getElementById('preco3').value);
+
+    if (p1 < p2 && p1 < p3)
+    alert("voce deve comprar o produto1");
+    else if (p2 < p1 && p2 < p3)
+    alert("voce deve comprar o produto2");
+    else if(p3 < p1 && p3 < p2)
+    alert("voce deve comprar o produto3");
+    
+ 
+  }
+
+
 
 
 
